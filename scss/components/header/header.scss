@@ -1,0 +1,36 @@
+.header {
+
+  svg {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    //fill: none;
+  }
+
+  &__row {
+    justify-content: space-between;
+  }
+
+  &__search {
+    gap: 17px;
+  }
+
+  &__search-form input {
+    border: none;
+  }
+
+  &__menu li:not(:last-child) {
+    padding-right: 42px;
+  }
+
+  nav {
+    padding-right: 47px;
+  }
+
+  &__nav {
+    svg:first-of-type {
+      margin-right: 25px;
+    }
+  }
+
+}

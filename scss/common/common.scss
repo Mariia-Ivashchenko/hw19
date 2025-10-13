@@ -1,0 +1,23 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: $font-md;
+  color: $main-text-color;
+}
+
+.container {
+  max-width: 1332px;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+//.btn {
+//  border: 2px solid;
+//  border-radius: 5px;
+//  padding: 13px 53px;
+//  font-size: $font-lg;
+//  text-transform: capitalize
+//}

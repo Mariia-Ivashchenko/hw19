@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: local("Plus Jakarta Sans Regular"), local("PlusJakartaSans-Regular"), url("../fonts/PlusJakartaSans-Regular.woff2") format("woff2"), url("../fonts/PlusJakartaSans-Regular.woff") format("woff"), url("../fonts/PlusJakartaSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+ol[class], ul, ul[class], menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a, label {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+blockquote, body, dd, dl, figcaption, figure, h1, h2, h3, h4, li, ol[class], p, ul[class] {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+button {
+  all: unset;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0s !important;
+    animation-duration: 0s !important;
+    -webkit-animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0s !important;
+    -o-transition-duration: 0s !important;
+    transition-duration: 0s !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 17px;
+  color: #000000;
+}
+
+.container {
+  max-width: 1332px;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header svg {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+.header__row {
+  justify-content: space-between;
+}
+.header__search {
+  gap: 17px;
+}
+.header__search-form input {
+  border: none;
+}
+.header__menu li:not(:last-child) {
+  padding-right: 42px;
+}
+.header nav {
+  padding-right: 47px;
+}
+.header__nav svg:first-of-type {
+  margin-right: 25px;
+}
+
+/*# sourceMappingURL=style.css.map */
