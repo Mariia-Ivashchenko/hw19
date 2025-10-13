@@ -5,8 +5,9 @@ body {
 }
 
 .container {
-  max-width: 1332px;
+  max-width: 1130px;
   padding: 0 15px;
+  margin: 0 auto;
 }
 
 .row {
@@ -14,10 +15,3 @@ body {
   flex-wrap: wrap;
 }
 
-//.btn {
-//  border: 2px solid;
-//  border-radius: 5px;
-//  padding: 13px 53px;
-//  font-size: $font-lg;
-//  text-transform: capitalize
-//}

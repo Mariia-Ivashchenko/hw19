@@ -77,8 +77,9 @@ body {
 }
 
 .container {
-  max-width: 1332px;
+  max-width: 1130px;
   padding: 0 15px;
+  margin: 0 auto;
 }
 
 .row {
@@ -86,10 +87,14 @@ body {
   flex-wrap: wrap;
 }
 
+.header {
+  margin-top: 46px;
+}
 .header svg {
   display: inline-block;
   width: 24px;
   height: 24px;
+  fill: none;
 }
 .header__row {
   justify-content: space-between;
@@ -101,10 +106,14 @@ body {
   border: none;
 }
 .header__menu li:not(:last-child) {
-  padding-right: 42px;
+  margin-right: 42px;
+}
+.header__menu li:hover {
+  border-bottom: 2px solid #000000;
+  transition: linear 0.2s;
 }
 .header nav {
-  padding-right: 47px;
+  margin-right: 47px;
 }
 .header__nav svg:first-of-type {
   margin-right: 25px;
