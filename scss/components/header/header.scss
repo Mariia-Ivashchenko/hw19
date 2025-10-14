@@ -1,6 +1,9 @@
 .header {
 
   margin-top: 46px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 
   svg {
     display: inline-block;
@@ -11,6 +14,8 @@
 
   &__row {
     justify-content: space-between;
+    align-items: center;
+    padding-left: 250px;
   }
 
   &__search {
@@ -19,6 +24,7 @@
 
   &__search-form input {
     border: none;
+    vertical-align: super;
   }
 
   &__menu li:not(:last-child) {
