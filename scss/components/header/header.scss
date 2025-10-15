@@ -5,6 +5,48 @@
   top: 0;
   width: 100%;
 
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 250px;
+    width: 100%;
+    padding: 0 37px 0 56px;
+    font-family: "Sofia Sans", sans-serif;
+
+    h1 {
+      font-weight: 800;
+      font-size: $font-xl;
+      margin-bottom: 44px;
+    }
+  }
+
+  .sidebar__logo {
+    margin-bottom: 57px;
+
+    svg {
+      width: 93px;
+      height: 44px;
+      fill: none;
+    }
+  }
+
+  .sidebar__icons {
+
+    margin-bottom: 28px;
+
+    img {
+      width: 23px;
+      height: 23px;
+      margin-right: 10px;
+    }
+
+  }
+
+  .sidebar__icons:last-child {
+    margin-top: 170px;
+  }
+
   svg {
     display: inline-block;
     width: 24px;
@@ -45,5 +87,4 @@
       margin-right: 25px;
     }
   }
-
 }

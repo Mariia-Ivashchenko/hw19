@@ -5,6 +5,20 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Sofia Sans";
+  src: local("Sofia Sans ExtraBold"), local("SofiaSans-ExtraBold"), url("../fonts/SofiaSans-ExtraBold.woff2") format("woff2"), url("../fonts/SofiaSans-ExtraBold.woff") format("woff"), url("../fonts/SofiaSans-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sofia Sans";
+  src: local("Sofia Sans Regular"), local("SofiaSans-Regular"), url("../fonts/SofiaSans-Regular.woff2") format("woff2"), url("../fonts/SofiaSans-Regular.woff") format("woff"), url("../fonts/SofiaSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 ol[class], ul, ul[class], menu {
   list-style: none;
   padding: 0;
@@ -92,6 +106,39 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+}
+.header .sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 250px;
+  width: 100%;
+  padding: 0 37px 0 56px;
+  font-family: "Sofia Sans", sans-serif;
+}
+.header .sidebar h1 {
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: 44px;
+}
+.header .sidebar__logo {
+  margin-bottom: 57px;
+}
+.header .sidebar__logo svg {
+  width: 93px;
+  height: 44px;
+  fill: none;
+}
+.header .sidebar__icons {
+  margin-bottom: 28px;
+}
+.header .sidebar__icons img {
+  width: 23px;
+  height: 23px;
+  margin-right: 10px;
+}
+.header .sidebar__icons:last-child {
+  margin-top: 170px;
 }
 .header svg {
   display: inline-block;
