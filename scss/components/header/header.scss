@@ -1,9 +1,11 @@
 .header {
 
-  margin-top: 46px;
+  padding-top: 46px;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 9;
+  background-color: $main-bg-color;
 
   .sidebar {
     position: absolute;
@@ -15,14 +17,13 @@
     font-family: "Sofia Sans", sans-serif;
 
     h1 {
-      font-weight: 800;
-      font-size: $font-xl;
+      @extend %title-style;
       margin-bottom: 44px;
     }
   }
 
   .sidebar__logo {
-    margin-bottom: 57px;
+    margin: 46px 0;
 
     svg {
       width: 93px;
