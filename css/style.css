@@ -179,7 +179,7 @@ main {
   border-bottom: 2px solid #000000;
   transition: linear 0.2s;
 }
-.header nav {
+.header .header__nav nav {
   margin-right: 47px;
 }
 .header__nav svg:first-of-type {
