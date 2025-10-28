@@ -6,67 +6,69 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HW19</title>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 <aside class="sidebar">
-    <div class="sidebar__logo">
-        <img src="../assets/icons/logo.svg" alt="logo">
+    <div class="sidebar__wrapper">
+        <div class="sidebar__logo">
+            <img src="../assets/icons/logo.svg" alt="logo">
+        </div>
+        <h1>
+            Explore
+        </h1>
+        <nav role="navigation" aria-label="Secondary navigation">
+            <div class="sidebar__icons row">
+                <img src="../assets/icons/new.svg" alt="new">
+                <a href="#">
+                    New In
+                </a>
+            </div>
+            <div class="sidebar__icons row">
+                <img src="../assets/icons/Clothing.svg" alt="Clothing">
+                <a href="#">
+                    Clothing
+                </a>
+            </div>
+            <div class="sidebar__icons row">
+                <img src="../assets/icons/Shoes.svg" alt="Shoes">
+                <a href="#">
+                    Shoes
+                </a>
+            </div>
+            <div class="sidebar__icons row">
+                <img src="../assets/icons/Accessories.svg" alt="Accessories">
+                <a href="#">
+                    Accessories
+                </a>
+            </div>
+            <div class="sidebar__icons row">
+                <img src="../assets/icons/Activewear.svg" alt="Activewear">
+                <a href="#">
+                    Activewear
+                </a>
+            </div>
+            <div class="sidebar__icons row">
+                <img src="../assets/icons/gifts.svg" alt="Gifts & Living">
+                <a href="#">
+                    Gifts & Living
+                </a>
+            </div>
+            <div class="sidebar__icons row">
+                <img src="../assets/icons/Inspiration.svg" alt="Inspiration">
+                <a href="#">
+                    Inspiration
+                </a>
+            </div>
+            <div class="sidebar__icons row">
+                <img src="../assets/icons/Help.svg" alt="Help Center">
+                <a href="#">
+                    Help Center
+                </a>
+            </div>
+        </nav>
     </div>
-    <h1>
-        Explore
-    </h1>
-    <nav role="navigation" aria-label="Secondary navigation">
-        <div class="sidebar__icons row">
-            <img src="../assets/icons/new.svg" alt="new">
-            <a href="#">
-                New In
-            </a>
-        </div>
-        <div class="sidebar__icons row">
-            <img src="../assets/icons/Clothing.svg" alt="Clothing">
-            <a href="#">
-                Clothing
-            </a>
-        </div>
-        <div class="sidebar__icons row">
-            <img src="../assets/icons/Shoes.svg" alt="Shoes">
-            <a href="#">
-                Shoes
-            </a>
-        </div>
-        <div class="sidebar__icons row">
-            <img src="../assets/icons/Accessories.svg" alt="Accessories">
-            <a href="#">
-                Accessories
-            </a>
-        </div>
-        <div class="sidebar__icons row">
-            <img src="../assets/icons/Activewear.svg" alt="Activewear">
-            <a href="#">
-                Activewear
-            </a>
-        </div>
-        <div class="sidebar__icons row">
-            <img src="../assets/icons/gifts.svg" alt="Gifts & Living">
-            <a href="#">
-                Gifts & Living
-            </a>
-        </div>
-        <div class="sidebar__icons row">
-            <img src="../assets/icons/Inspiration.svg" alt="Inspiration">
-            <a href="#">
-                Inspiration
-            </a>
-        </div>
-        <div class="sidebar__icons row">
-            <img src="../assets/icons/Help.svg" alt="Help Center">
-            <a href="#">
-                Help Center
-            </a>
-        </div>
-    </nav>
 </aside>
 <header class="header">
     <div class="container">
@@ -89,7 +91,11 @@
             </div>
 
             <div class="header__nav row">
-                <nav role="navigation" aria-label="Primary">
+                <label for="header__nav-button">
+                    <i class="bi bi-list"></i>
+                </label>
+                <input type="checkbox" name="header__nav-button" id="header__nav-button" class="header__nav-button">
+                <nav role="navigation" aria-label="Primary" class="header__nav">
                     <menu class="header__menu row">
                         <li><a href="#">products</a></li>
                         <li><a href="#">story</a></li>

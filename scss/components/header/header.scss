@@ -36,9 +36,13 @@
     transition: linear 0.2s;
   }
 
-  .header__nav {
+  &__nav {
     nav {
       margin-right: 47px;
+    }
+
+    input {
+      display: none;
     }
   }
 

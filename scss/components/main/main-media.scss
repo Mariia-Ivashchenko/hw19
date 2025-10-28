@@ -8,13 +8,14 @@
     &__group-bottom-row {
       flex-direction: column;
       width: 100%;
-      margin-bottom: 20px;
+      margin: 0 0 20px;
     }
 
     &__group-col,
     &__group-bottom-col {
       width: 100%;
       justify-content: center;
+      margin: 0 0 20px;
     }
   }
 }

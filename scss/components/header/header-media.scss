@@ -1,7 +1,53 @@
 .header {
+  @media (min-width: $breakpoint-xl) {
+    & {
+      [for="header__nav-button"]  {
+        display: none;
+      }
+    }
+  }
+
   @include desktop {
     &__menu li:not(:last-child) {
         margin-right: 35px;
+    }
+  }
+
+  @include laptop {
+    &__menu {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 80px;
+      background-color: white;
+      text-align: center;
+      width: -webkit-fill-available;
+
+      & li:hover {
+        scale: (1.5);
+        border-bottom: none;
+        transition: .3s;
+        padding-bottom: 10px;
+      }
+
+      li:not(:last-child) {
+        margin: 0;
+      }
+    }
+
+    &__nav {
+      align-items: center;
+
+       &-button {
+        display: inline-block;
+        font-size: $font-lg;
+
+         &:checked {
+          & + nav .header__menu {
+             display: initial;
+           }
+         }
+      }
     }
   }
 }

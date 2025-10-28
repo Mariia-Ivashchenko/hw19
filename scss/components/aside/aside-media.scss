@@ -1,0 +1,15 @@
+.sidebar {
+  @include desktop {
+    &__wrapper {
+      position: sticky;
+      top: 40px;
+      left: 0;
+    }
+  }
+
+  @include laptop {
+    & {
+      padding: 0 15px;
+    }
+  }
+}
