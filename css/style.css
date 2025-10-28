@@ -188,18 +188,24 @@ main {
   margin-right: 25px;
 }
 
+@media (max-width: 1350px) {
+  .header__menu li:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+
 .content__group, .content__group-bottom {
   margin-bottom: 20px;
   justify-content: center;
 }
-.content__group .content__group-row {
+.content__group-row {
   justify-content: end;
   align-items: center;
   width: calc(50% - 10px);
   gap: 20px;
   margin-right: 10px;
 }
-.content__group .content__group-col {
+.content__group-col {
   justify-content: start;
   align-items: center;
   width: calc(50% - 10px);
@@ -231,14 +237,14 @@ main {
 .content__group-bottom {
   flex-direction: row-reverse;
 }
-.content__group-bottom .content__group-row {
+.content__group-bottom-row {
   justify-content: start;
   align-items: center;
   width: calc(50% - 10px);
   gap: 20px;
   margin-left: 10px;
 }
-.content__group-bottom .content__group-col {
+.content__group-bottom-col {
   justify-content: end;
   align-items: center;
   width: calc(50% - 10px);
@@ -260,6 +266,21 @@ main {
 }
 .content__group-bottom .buy {
   color: #FD2E24;
+}
+
+@media (max-width: 1350px) {
+  .content .container {
+    max-width: 768px;
+  }
+  .content__group-row, .content__group-bottom-row {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .content__group-col, .content__group-bottom-col {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

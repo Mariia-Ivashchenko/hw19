@@ -7,12 +7,12 @@
   }
 
   &__group {
-    .content__group-row {
+    &-row {
       @include flex-item(end, center, calc(50% - 10px), 20px);
       margin-#{$position-right}: 10px;
     }
 
-    .content__group-col {
+    &-col {
       @include flex-item(start, center, calc(50% - 10px), 20px);
       margin-#{$position-left}: 10px;
     }
@@ -52,12 +52,12 @@
 
     flex-direction: row-reverse;
 
-    .content__group-row {
+    &-row {
       @include flex-item(start, center, calc(50% - 10px), 20px);
       margin-#{$position-left}: 10px;
     }
 
-    .content__group-col {
+    &-col {
       @include flex-item(end, center, calc(50% - 10px), 20px);
       margin-#{$position-right}: 10px;
     }

@@ -1,0 +1,20 @@
+.content {
+  @include desktop {
+    .container {
+      max-width: 768px;
+    }
+
+    &__group-row,
+    &__group-bottom-row {
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    &__group-col,
+    &__group-bottom-col {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
