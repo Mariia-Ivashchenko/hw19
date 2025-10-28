@@ -1,0 +1,45 @@
+.sidebar {
+  grid-area: aside;
+  max-width: 250px;
+  width: 100%;
+  padding: 0 37px 0 56px;
+  font-family: "Sofia Sans", sans-serif;
+  //position: sticky;
+  //top: 0;
+  //height: 100vh;
+  //align-self: start;
+
+  h1 {
+    @extend %title-style;
+    margin: -22px 0 44px;
+  }
+
+  &__logo {
+    margin: 46px 0;
+
+    img {
+      width: 93px;
+      height: 44px;
+    }
+  }
+
+  &__icons {
+
+    margin-bottom: 28px;
+
+    img {
+      width: 23px;
+      height: 23px;
+      margin-right: 10px;
+    }
+
+    &:last-child {
+      margin-top: 170px;
+    }
+  }
+}
+
+
+
+
+

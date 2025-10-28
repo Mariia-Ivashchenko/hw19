@@ -84,7 +84,7 @@ button {
     scroll-behavior: auto !important;
   }
 }
-.content__group figcaption, .header .sidebar h1 {
+.content__group figcaption, .sidebar h1 {
   font-weight: 800;
   font-size: 30px;
 }
@@ -98,10 +98,14 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 17px;
   color: #000000;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: max-content max-content max-content;
+  grid-template-areas: "aside header" "aside main" "aside main";
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1130px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -113,46 +117,45 @@ body {
 
 main {
   font-family: "Sofia Sans", sans-serif;
+  grid-area: main;
 }
 
-.header {
-  padding-top: 46px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 9;
-  background-color: white;
-}
-.header .sidebar {
-  position: absolute;
-  top: 0;
-  left: 0;
+.sidebar {
+  grid-area: aside;
   max-width: 250px;
   width: 100%;
   padding: 0 37px 0 56px;
   font-family: "Sofia Sans", sans-serif;
 }
-.header .sidebar h1 {
-  margin-bottom: 44px;
+.sidebar h1 {
+  margin: -22px 0 44px;
 }
-.header .sidebar__logo {
+.sidebar__logo {
   margin: 46px 0;
 }
-.header .sidebar__logo svg {
+.sidebar__logo img {
   width: 93px;
   height: 44px;
-  fill: none;
 }
-.header .sidebar__icons {
+.sidebar__icons {
   margin-bottom: 28px;
 }
-.header .sidebar__icons img {
+.sidebar__icons img {
   width: 23px;
   height: 23px;
   margin-right: 10px;
 }
-.header .sidebar__icons:last-child {
+.sidebar__icons:last-child {
   margin-top: 170px;
+}
+
+.header {
+  grid-area: header;
+  padding: 46px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
 }
 .header svg {
   display: inline-block;
@@ -163,7 +166,6 @@ main {
 .header__row {
   justify-content: space-between;
   align-items: center;
-  padding-left: 250px;
 }
 .header__search {
   gap: 17px;
@@ -186,27 +188,23 @@ main {
   margin-right: 25px;
 }
 
-.content {
-  margin: 120px 0 0 0;
-}
 .content__group, .content__group-bottom {
   margin-bottom: 20px;
-  padding-left: 250px;
   justify-content: center;
 }
 .content__group .content__group-row {
   justify-content: end;
   align-items: center;
-  width: calc(50% - 20px);
+  width: calc(50% - 10px);
   gap: 20px;
-  padding-right: 10px;
+  margin-right: 10px;
 }
 .content__group .content__group-col {
   justify-content: start;
   align-items: center;
-  width: calc(50% - 20px);
+  width: calc(50% - 10px);
   gap: 20px;
-  padding-left: 10px;
+  margin-left: 10px;
 }
 .content__group figcaption {
   position: absolute;
@@ -236,16 +234,16 @@ main {
 .content__group-bottom .content__group-row {
   justify-content: start;
   align-items: center;
-  width: calc(50% - 20px);
+  width: calc(50% - 10px);
   gap: 20px;
-  padding-left: 10px;
+  margin-left: 10px;
 }
 .content__group-bottom .content__group-col {
   justify-content: end;
   align-items: center;
-  width: calc(50% - 20px);
+  width: calc(50% - 10px);
   gap: 20px;
-  padding-right: 10px;
+  margin-right: 10px;
 }
 .content__group-bottom figcaption {
   position: absolute;

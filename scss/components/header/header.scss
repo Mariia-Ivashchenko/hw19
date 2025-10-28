@@ -1,52 +1,10 @@
 .header {
-
-  padding-top: 46px;
-  position: fixed;
+  grid-area: header;
+  padding: 46px 0;
+  position: sticky;
   top: 0;
-  width: 100%;
-  z-index: 9;
+  z-index: 10;
   background-color: $main-bg-color;
-
-  .sidebar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 250px;
-    width: 100%;
-    padding: 0 37px 0 56px;
-    font-family: "Sofia Sans", sans-serif;
-
-    h1 {
-      @extend %title-style;
-      margin-bottom: 44px;
-    }
-  }
-
-  .sidebar__logo {
-    margin: 46px 0;
-
-    svg {
-      width: 93px;
-      height: 44px;
-      fill: none;
-    }
-  }
-
-  .sidebar__icons {
-
-    margin-bottom: 28px;
-
-    img {
-      width: 23px;
-      height: 23px;
-      margin-right: 10px;
-    }
-
-  }
-
-  .sidebar__icons:last-child {
-    margin-top: 170px;
-  }
 
   svg {
     display: inline-block;
@@ -58,7 +16,6 @@
   &__row {
     justify-content: space-between;
     align-items: center;
-    padding-left: 250px;
   }
 
   &__search {
