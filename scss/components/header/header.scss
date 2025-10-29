@@ -6,6 +6,15 @@
   z-index: 10;
   background-color: $main-bg-color;
 
+  img {
+    width: 93px;
+    height: 44px;
+  }
+
+  &__logo-btn {
+    display: none;
+  }
+
   svg {
     @extend %header-svg;
   }

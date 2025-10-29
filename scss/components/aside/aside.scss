@@ -2,7 +2,7 @@
   grid-area: aside;
   max-width: 250px;
   width: 100%;
-  padding: 0 37px 0 56px;
+  padding: 0 37px 0 55px;
   font-family: $font-sofia;
   //position: sticky;
   //top: 0;
@@ -11,16 +11,11 @@
 
   h1 {
     @extend %title-style;
-    margin: -22px 0 44px;
+    margin-bottom: 44px;
   }
 
   &__logo {
-    margin: 46px 0;
-
-    img {
-      width: 93px;
-      height: 44px;
-    }
+    padding: 46px 0;
   }
 
   &__icons {

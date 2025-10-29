@@ -1,15 +1,19 @@
 .header {
   @media (min-width: $breakpoint-xl) {
     & {
-      [for="header__nav-button"]  {
+      [for="header__nav-button"] {
         display: none;
       }
     }
   }
 
+  &__sidebar {
+    display: none;
+  }
+
   @include desktop {
     &__menu li:not(:last-child) {
-        margin-right: 35px;
+      margin-right: 35px;
     }
   }
 
@@ -38,16 +42,29 @@
     &__nav {
       align-items: center;
 
-       &-button {
+      &-button {
         display: inline-block;
         font-size: $font-lg;
 
-         &:checked {
+        &:checked {
           & + nav .header__menu {
-             display: initial;
-           }
-         }
+            display: initial;
+          }
+        }
       }
     }
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    &__logo {
+      display: none;
+    }
+
+    &__logo-btn:checked {
+      & + .header__sidebar {
+        display: initial;
+      }
+    }
+
   }
 }
