@@ -1,5 +1,5 @@
 body {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: $font-jakarta;
   font-size: $font-md;
   color: $main-text-color;
   display: grid;
@@ -9,6 +9,11 @@ body {
 "aside header"
 "aside main"
 "aside main";
+}
+
+main {
+  font-family: "Sofia Sans", sans-serif;
+  grid-area: main;
 }
 
 .container {
@@ -22,8 +27,9 @@ body {
   flex-wrap: wrap;
 }
 
-main {
-  font-family: "Sofia Sans", sans-serif;
-  grid-area: main;
+.align-center {
+  align-items: center;
 }
+
+
 

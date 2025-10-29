@@ -3,7 +3,7 @@
   max-width: 250px;
   width: 100%;
   padding: 0 37px 0 56px;
-  font-family: "Sofia Sans", sans-serif;
+  font-family: $font-sofia;
   //position: sticky;
   //top: 0;
   //height: 100vh;
@@ -24,12 +24,10 @@
   }
 
   &__icons {
-
     margin-bottom: 28px;
 
     img {
-      width: 23px;
-      height: 23px;
+      @extend %header-svg;
       margin-right: 10px;
     }
 

@@ -3,6 +3,9 @@ $font-md: 17px;
 $font-lg: 26px;
 $font-xl: 30px;
 
+$font-jakarta: "Plus Jakarta Sans", sans-serif;
+$font-sofia: "Sofia Sans", sans-serif;
+
 $main-text-color: #000000;
 
 $main-bg-color: #FFFFFFFF;
@@ -10,7 +13,8 @@ $main-bg-color: #FFFFFFFF;
 $position-right: right;
 $position-left: left;
 
-$header-height: max-content;
+$header-height: 80px;
 
 $breakpoint-xxl: 1350px;
 $breakpoint-xl: 1024px;
+

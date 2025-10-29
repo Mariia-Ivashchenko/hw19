@@ -7,24 +7,19 @@
   background-color: $main-bg-color;
 
   svg {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    fill: none;
+    @extend %header-svg;
   }
 
   &__row {
     justify-content: space-between;
-    align-items: center;
   }
 
   &__search {
     gap: 17px;
-  }
 
-  &__search-form input {
-    border: none;
-    vertical-align: super;
+    &-form input {
+      border: none;
+    }
   }
 
   &__menu li:not(:last-child) {
@@ -44,11 +39,13 @@
     input {
       display: none;
     }
-  }
 
-  &__nav {
+    .bi-list {
+      font-size: $font-lg;
+    }
+
     svg:first-of-type {
-      margin-right: 25px;
+      margin-right: 20px;
     }
   }
 }
