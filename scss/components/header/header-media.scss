@@ -15,6 +15,10 @@
     &__menu li:not(:last-child) {
       margin-right: 35px;
     }
+
+    &__search {
+      margin: 0;
+    }
   }
 
   @include laptop {
@@ -24,6 +28,7 @@
       left: 0;
       top: $header-height;
       background-color: white;
+      z-index: 10;
       text-align: center;
       width: -webkit-fill-available;
 
@@ -59,12 +64,43 @@
     &__logo {
       display: none;
     }
+  }
 
-    &__logo-btn:checked {
-      & + .header__sidebar {
-        display: initial;
+  @include tablet {
+    & {
+
+      &__sidebar {
+        position: absolute;
+        left: 0;
+        top: $header-height;
+        z-index: 15;
+        background-color: white;
+        text-align: center;
+        width: max-content;
+
+        .sidebar__icons {
+          margin: 0;
+
+          img {
+            width: 45px;
+            height: 22px;
+          }
+        }
+      }
+
+      &__logo {
+        display: inline-block;
+
+        &-btn {
+
+
+          &:checked {
+            & + .header__sidebar {
+              display: initial;
+            }
+          }
+        }
       }
     }
-
   }
 }
