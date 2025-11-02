@@ -24,4 +24,26 @@
       max-width: 577px;
     }
   }
+
+  @include mobile {
+    & {
+
+      &__group {
+        figcaption {
+          font-size: 16px;
+        }
+
+        &-bottom {
+
+          h2 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 10px !important;
+          }
+        }
+      }
+    }
+  }
 }

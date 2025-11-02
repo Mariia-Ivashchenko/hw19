@@ -6,6 +6,10 @@
   z-index: 10;
   background-color: $main-bg-color;
 
+  &__sidebar {
+    display: none;
+  }
+
   img {
     width: 93px;
     height: 44px;

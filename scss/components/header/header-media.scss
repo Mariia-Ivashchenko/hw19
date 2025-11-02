@@ -7,10 +7,6 @@
     }
   }
 
-  &__sidebar {
-    display: none;
-  }
-
   @include desktop {
     &__menu li:not(:last-child) {
       margin-right: 35px;
@@ -99,6 +95,51 @@
               display: initial;
             }
           }
+        }
+      }
+    }
+  }
+
+  @include mobile {
+    %header-mobile-svg {
+      width: 12px;
+      height: 12px;
+    }
+
+    & {
+      padding: 23px 0;
+
+      &__menu {
+        top: $header-height-mobile;
+        text-align: end;
+      }
+
+      &__sidebar {
+        top: $header-height-mobile;
+      }
+
+      &__row {
+
+        img {
+          width: 55px;
+          height: 25px;
+        }
+
+        svg {
+          @extend %header-mobile-svg;
+        }
+      }
+
+      &__search {
+        input {
+          font-size: $font-sm;
+          max-width: 75px;
+        }
+      }
+
+      &__nav {
+        .bi-list {
+          font-size: $font-sm;
         }
       }
     }
