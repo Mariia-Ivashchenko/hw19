@@ -134,7 +134,7 @@
             </aside>
 
             <div class="header__search row">
-                <form class="header__search-form">
+                <form class="header__search-form header__search-form-desktop">
                     <label class="row align-center">
                         <svg viewBox="0 0 24 24">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -147,22 +147,43 @@
                         <input type="text" name="search" placeholder="Search store">
                     </label>
                 </form>
+                <form class="header__search-form header__search-form-mobile">
+                    <label class="row align-center">
+                        <svg viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M17.8723 16.8116C19.1996 15.2436 20 13.2153 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C13.2153 20 15.2436 19.1996 16.8116 17.8723L19.4697 20.5303C19.7626 20.8232 20.2374 20.8232 20.5303 20.5303C20.8232 20.2374 20.8232 19.7626 20.5303 19.4697L17.8723 16.8116ZM18.5 11C18.5 15.1421 15.1421 18.5 11 18.5C6.85786 18.5 3.5 15.1421 3.5 11C3.5 6.85786 6.85786 3.5 11 3.5C15.1421 3.5 18.5 6.85786 18.5 11Z"
+                                  fill="black"/>
+                            <path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M17.8723 16.8116C19.1996 15.2436 20 13.2153 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C13.2153 20 15.2436 19.1996 16.8116 17.8723L19.4697 20.5303C19.7626 20.8232 20.2374 20.8232 20.5303 20.5303C20.8232 20.2374 20.8232 19.7626 20.5303 19.4697L17.8723 16.8116ZM18.5 11C18.5 15.1421 15.1421 18.5 11 18.5C6.85786 18.5 3.5 15.1421 3.5 11C3.5 6.85786 6.85786 3.5 11 3.5C15.1421 3.5 18.5 6.85786 18.5 11Z"
+                                  fill="black"/>
+                        </svg>
+                        <input type="text" name="search" placeholder="Search">
+                    </label>
+                </form>
             </div>
 
             <div class="header__nav row">
-                <label for="header__nav-button">
-                    <i class="bi bi-list"></i>
-                </label>
-                <input type="checkbox" name="header__nav-button" id="header__nav-button" class="header__nav-button">
-                <nav role="navigation" aria-label="Primary" class="header__nav">
-                    <menu class="header__menu row">
-                        <li><a href="#">products</a></li>
-                        <li><a href="#">story</a></li>
-                        <li><a href="#">manufacturing</a></li>
-                        <li><a href="#">packaging</a></li>
-                    </menu>
-                </nav>
-                <div class="header__nav-icons row align-center">
+                <div class="header__nav-column row align-center">
+                    <label for="header__nav-button" class="row align-center">
+                        <svg viewBox="0 0 24 24"
+                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                             class="lucide lucide-menu-icon lucide-menu">
+                            <path d="M4 5h16"/>
+                            <path d="M4 12h16"/>
+                            <path d="M4 19h16"/>
+                        </svg>
+                    </label>
+                    <input type="checkbox" name="header__nav-button" id="header__nav-button" class="header__nav-button">
+                    <nav role="navigation" aria-label="Primary" class="header__nav">
+                        <menu class="header__menu row">
+                            <li><a href="#">products</a></li>
+                            <li><a href="#">story</a></li>
+                            <li><a href="#">manufacturing</a></li>
+                            <li><a href="#">packaging</a></li>
+                        </menu>
+                    </nav>
+                </div>
+                <div class="header__nav-column header__nav-icons row align-center">
                     <svg viewBox="0 0 24 24">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                               d="M5.69865 7L10.0973 2.78467C11.161 1.7653 12.839 1.7653 13.9027 2.78467L18.3013 7H20.847C21.4555 7 21.923 7.53899 21.8369 8.14142L20.368 18.4243C20.1568 19.9022 18.8911 21 17.3981 21H6.6019C5.10895 21 3.84318 19.9022 3.63205 18.4243L2.16307 8.14142C2.07701 7.53899 2.54447 7 3.15302 7H5.69865ZM11.1351 3.86766C11.6186 3.4043 12.3814 3.4043 12.8649 3.86766L16.1334 7H7.86658L11.1351 3.86766ZM3.72952 8.5L5.11697 18.2121C5.22254 18.9511 5.85542 19.5 6.6019 19.5H17.3981C18.1446 19.5 18.7775 18.9511 18.883 18.2121L20.2705 8.5H3.72952Z"

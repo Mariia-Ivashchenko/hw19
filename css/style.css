@@ -218,6 +218,9 @@ main {
   gap: 17px;
   margin-left: -330px;
 }
+.header__search-form-mobile {
+  display: none;
+}
 .header__search-form input {
   border: none;
 }
@@ -234,10 +237,7 @@ main {
 .header__nav input {
   display: none;
 }
-.header__nav .bi-list {
-  font-size: 26px;
-}
-.header__nav svg:first-of-type {
+.header__nav-icons svg:first-of-type {
   margin-right: 20px;
 }
 
@@ -333,12 +333,18 @@ main {
     width: 55px;
     height: 25px;
   }
+  .header__search-form-desktop {
+    display: none;
+  }
+  .header__search-form-mobile {
+    display: initial;
+  }
   .header__search input {
     font-size: 14px;
     max-width: 75px;
   }
-  .header__nav .bi-list {
-    font-size: 14px;
+  .header__nav-column svg {
+    padding-bottom: 3px;
   }
 }
 

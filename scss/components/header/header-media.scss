@@ -131,6 +131,15 @@
       }
 
       &__search {
+
+        &-form-desktop {
+          display: none;
+        }
+
+        &-form-mobile {
+          display: initial;
+        }
+
         input {
           font-size: $font-sm;
           max-width: 75px;
@@ -138,8 +147,10 @@
       }
 
       &__nav {
-        .bi-list {
-          font-size: $font-sm;
+        &-column {
+          svg {
+            padding-bottom: 3px;
+          }
         }
       }
     }

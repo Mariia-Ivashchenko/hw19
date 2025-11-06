@@ -31,6 +31,10 @@
     gap: 17px;
     margin-left: -330px;
 
+    &-form-mobile {
+      display: none;
+    }
+
     &-form input {
       border: none;
     }
@@ -54,12 +58,11 @@
       display: none;
     }
 
-    .bi-list {
-      font-size: $font-lg;
-    }
+    &-icons {
 
-    svg:first-of-type {
-      margin-right: 20px;
+      svg:first-of-type {
+        margin-right: 20px;
+      }
     }
   }
 }
